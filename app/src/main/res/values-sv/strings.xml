@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Assignment_1</string>
+
+    <string name="random_quotes">Skräck Citat..</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="get_quote">Få nytt citat</string>
+    <string name="hello_world">Hej världen</string>
+    <string name="your_quote">Dina citat</string>
+
+    <string-array name="myQuotes">
+
+        <item>
+        "Tro bara hälften av vad du ser och ingenting som du hör."
+― Edgar Allan Poe
+        </item>
+
+        <item>
+      "Från och med den största av fasor ironi är sällan frånvarande."
+― H.P. Lovecraft, Tales of H.P. Lovecraft
+
+        </item>
+
+          <item>
+        “Mannen i svart flydde genom öknen , och revolverman följt.”
+― Stephen King, The Gunslinger
+
+        </item>
+
+           <item>
+        “Vi gör upp fasor för att hjälpa oss att klara av de riktiga.”
+― Stephen King
+
+        </item>
+
+    </string-array>
+
+</resources>
