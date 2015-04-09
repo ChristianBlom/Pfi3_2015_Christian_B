@@ -1,13 +1,57 @@
 package com.example.chris_000.assignment_1;
 
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Button;
+import java.util.Random;
 
 
 public class MainActivity extends ActionBarActivity {
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("Start","Starts");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("Stop","Stops");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("Destroy","Destroyed");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.i("Resume","Resumed");
+    }
+
+    TextView t;
+
+    public void onClick(View Button){
+        Button b = (Button) findViewById(R.id.myButton);
+        t = (TextView) findViewById(R.id.textView2);
+
+
+        Resources res = getResources();
+        String [] Q = res.getStringArray(R.array.myQuotes);
+
+        t.setText(Q[new Random().nextInt(Q.length)]);
+        Log.i("Button","Pressed");
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
